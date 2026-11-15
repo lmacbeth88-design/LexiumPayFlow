@@ -1,0 +1,39 @@
+{
+  "name": "@lexium/admin-dashboard",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test --experimental-strip-types src/app/api/voice/transcribe/route.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lexium/ai-agent-engine": "workspace:*",
+    "@fontsource-variable/jetbrains-mono": "^5.2.5",
+    "@fontsource-variable/manrope": "^5.2.5",
+    "@lexium/shared-contracts": "workspace:*",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.468.0",
+    "next": "15.5.29",
+    "qrcode": "^1.5.4",
+    "react": "19.1.10",
+    "react-dom": "19.1.10",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.18",
+    "@types/node": "^22.10.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "4.1.18",
+    "typescript": "^5.6.3"
+  }
+}

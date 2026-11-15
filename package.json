@@ -1,0 +1,21 @@
+{
+  "name": "lexium-payflow",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "corepack pnpm --filter @lexium/admin-dashboard dev --hostname 127.0.0.1 --port 3000",
+    "dev:dashboard": "corepack pnpm --filter @lexium/admin-dashboard dev --hostname 127.0.0.1 --port 3000",
+    "dev:backend": "corepack pnpm --filter @lexium-payflow/core-backend dev --hostname 127.0.0.1 --port 3001",
+    "start:dashboard": "corepack pnpm --filter @lexium/admin-dashboard start --hostname 127.0.0.1 --port 3000",
+    "start:backend": "corepack pnpm --filter @lexium-payflow/core-backend start --hostname 127.0.0.1 --port 3001",
+    "build": "corepack pnpm --filter @lexium/admin-dashboard build && corepack pnpm --filter @lexium-payflow/core-backend build",
+    "typecheck": "corepack pnpm -r typecheck",
+    "test": "corepack pnpm --filter @lexium/shared-contracts test && corepack pnpm --filter @lexium/ai-agent-engine test && corepack pnpm --filter @lexium-payflow/core-backend test && corepack pnpm --filter @lexium/admin-dashboard test"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": "^8.5.33"
+    }
+  }
+}

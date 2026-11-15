@@ -1,0 +1,30 @@
+{
+  "name": "@lexium/ai-agent-engine",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "demo": "tsx src/cli/demo.ts",
+    "demo:agent": "tsx src/cli/demo.ts --agent"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.0",
+    "@lexium/shared-contracts": "workspace:*",
+    "ai": "^5.0.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
